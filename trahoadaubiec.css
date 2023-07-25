@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .container{
+    height: 3000px;
+} */
+
+html,
+body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+header {
+    height: 150px;
+    /* position: relative; */
+}
+
+.header-top {
+    position: relative;
+    background: black;
+    height: 30px;
+    color: azure;
+    display: flex;
+}
+.header-top .Address{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    padding-right: 15px;
+    border-right: 1px solid #fff;
+}
+.header-top .Phone{
+    position: absolute;
+    left: 380px;
+    top: 5px;
+    padding-left: 10px;
+}
+.header-bottom {
+    height: 100px;
+    background: #EBDECC;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-bottom .logo img{
+    width: 150px;
+    height: 100px;
+}
+nav{
+    padding-top: 30px;
+}
+ul {
+    list-style: none;
+}
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.menu > li {
+    float: left;
+    position: relative;
+}
+.menu > li a{
+    display: block;
+    padding: 10px 15px;
+    border-right: 1px solid #fefefe;
+}
+.menu > li a:hover{
+    background: #e4d3bb;
+}
+.menu ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background:#EBDECC ;
+    display: none;
+}
+.menu li:hover > ul{
+    display: block;
+}
+
+
+.button input {
+    width: 200px;
+    height: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+.button input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
+}
+
+.button button {
+    width: 100px;
+    height: 30px;
+    background: #353535;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.button button:hover {
+    background: #969696;
+    box-shadow: 1px #fff;
+}
+
+
+
+
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section {
+    width: 1000px;
+    /* border: 1px solid; */
+    margin-left: 220px;
+}
+
+.path ul {
+    display: flex;
+}
+
+.path ul li {
+    margin: 10px 5px 30px 20px;
+}
+
+.path ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: #010201;
+    opacity: 0.2;
+}
+
+.path ul li a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: #010201;
+    opacity: 3;
+}
+
+.Product-details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Product-details img {
+    width: 450px;
+    height: 500px;
+}
+
+.detail {
+    width: 400px;
+    /* background: rgb(250, 249, 245); */
+}
+
+.details h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.details span {
+    font-weight: bolder;
+}
+
+.cart .button-one {
+    width: 200px;
+    height: 40px;
+    background: #626161;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.cart .button-one:hover {
+    background: #8f8d8d;
+    box-shadow: 1px #fff;
+}
+
+.cart .button-two {
+    width: 100px;
+    height: 40px;
+    background: #d81212;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.cart .button-two:hover {
+    background: #970707;
+    box-shadow: 1px #fff;
+}
+.category{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.icon ul {
+    display: flex;
+}
+.icon ul li a {
+    text-decoration: none;
+    color: #010201;
+    margin-right: 5px;
+}
+
+#buy-amount {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#buy-amount button {
+    width: 35px;
+    height: 35px;
+    outline: none;
+    background: none;
+    border: 1px solid #ececec;
+    cursor: pointer;
+}
+
+#buy-amount button:hover {
+    background-color: #ececec;
+}
+
+#buy-amount button .fab {
+    color: #909090;
+}
+
+#buy-amount button:hover .fab {
+    color: #4f4f4f;
+}
+
+#buy-amount #mount {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ececec;
+}
+.Product-details .detail .details .select{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.Product-details .detail .details .select-two{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+footer{
+    position: relative;
+    height: 170px;
+    margin-top: 20px;
+    background: #EBDECC;
+}
+footer img{
+    width: 250px;
+    height: 170px;
+    position: absolute;
+    left: 100px;
+}
+.account p a{
+   text-decoration: none; 
+   color: #000;
+}
+footer .account{
+    position: absolute;
+    top: 30px;
+    left: 600px;
+}
+footer .contact{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+}
